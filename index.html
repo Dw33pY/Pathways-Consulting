@@ -1,0 +1,617 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pathways Consulting | Transforming Vision Into Tangible Success</title>
+    <!-- Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Playfair+Display:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <!-- Animate.css -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        :root {
+            --primary: #2563eb;
+            --secondary: #1e40af;
+            --accent: #f59e0b;
+            --dark: #1e293b;
+            --light: #f8fafc;
+        }
+        
+        body {
+            font-family: 'Poppins', sans-serif;
+            color: var(--dark);
+            scroll-behavior: smooth;
+        }
+        
+        h1, h2, h3, h4 {
+            font-family: 'Playfair Display', serif;
+        }
+        
+        .hero-gradient {
+            background: linear-gradient(135deg, rgba(37, 99, 235, 0.9) 0%, rgba(30, 64, 175, 0.9) 100%);
+        }
+        
+        .card-hover:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+        }
+        
+        .transition-all {
+            transition: all 0.3s ease;
+        }
+        
+        .section-divider {
+            height: 100px;
+            background: linear-gradient(to bottom right, transparent 49.5%, white 50%);
+        }
+        
+        .floating {
+            animation: floating 3s ease-in-out infinite;
+        }
+        
+        @keyframes floating {
+            0% { transform: translateY(0px); }
+            50% { transform: translateY(-15px); }
+            100% { transform: translateY(0px); }
+        }
+    </style>
+</head>
+<body class="bg-gray-50">
+    <!-- Navigation -->
+    <nav class="fixed w-full bg-white shadow-md z-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between h-20 items-center">
+                <div class="flex items-center">
+                    <a href="#" class="text-2xl font-bold text-blue-600 flex items-center">
+                        <i class="fas fa-road mr-2"></i>
+                        <span>PATHWAYS CONSULTING</span>
+                    </a>
+                </div>
+                <div class="hidden md:flex space-x-8">
+                    <a href="#about" class="text-gray-700 hover:text-blue-600 transition-all">About</a>
+                    <a href="#approach" class="text-gray-700 hover:text-blue-600 transition-all">Our Approach</a>
+                    <a href="#expertise" class="text-gray-700 hover:text-blue-600 transition-all">Expertise</a>
+                    <a href="#track-record" class="text-gray-700 hover:text-blue-600 transition-all">Track Record</a>
+                    <a href="#contact" class="text-gray-700 hover:text-blue-600 transition-all">Contact</a>
+                </div>
+                <div class="md:hidden">
+                    <button id="mobile-menu-button" class="text-gray-700 hover:text-blue-600">
+                        <i class="fas fa-bars text-2xl"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+        <!-- Mobile menu -->
+        <div id="mobile-menu" class="hidden md:hidden bg-white shadow-lg">
+            <div class="px-4 pt-2 pb-4 space-y-2">
+                <a href="#about" class="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-blue-600 hover:bg-gray-50">About</a>
+                <a href="#approach" class="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-blue-600 hover:bg-gray-50">Our Approach</a>
+                <a href="#expertise" class="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-blue-600 hover:bg-gray-50">Expertise</a>
+                <a href="#track-record" class="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-blue-600 hover:bg-gray-50">Track Record</a>
+                <a href="#contact" class="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-blue-600 hover:bg-gray-50">Contact</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <header class="hero-gradient pt-32 pb-20 text-white relative overflow-hidden">
+        <div class="absolute inset-0 opacity-10">
+            <div class="absolute top-0 left-0 w-full h-full bg-gradient-to-r from-blue-400 to-blue-600 opacity-20"></div>
+        </div>
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+            <div class="grid md:grid-cols-2 gap-12 items-center">
+                <div class="animate__animated animate__fadeInLeft">
+                    <h1 class="text-4xl md:text-5xl lg:text-6xl font-bold mb-6">Transforming Vision Into <span class="text-yellow-400">Tangible Success</span></h1>
+                    <p class="text-xl mb-8">Empowering organizations to overcome complex challenges and achieve sustainable growth through innovative consulting solutions.</p>
+                    <div class="flex space-x-4">
+                        <a href="#contact" class="bg-yellow-500 hover:bg-yellow-600 text-white font-semibold px-6 py-3 rounded-lg transition-all transform hover:scale-105 shadow-lg">Get Started</a>
+                        <a href="#approach" class="border-2 border-white hover:bg-white hover:text-blue-600 font-semibold px-6 py-3 rounded-lg transition-all transform hover:scale-105">Our Approach</a>
+                    </div>
+                </div>
+                <div class="animate__animated animate__fadeInRight hidden md:block">
+                    <img src="https://images.unsplash.com/photo-1579621970563-ebec7560ff3e?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1471&q=80" alt="Business Strategy" class="rounded-xl shadow-2xl floating">
+                </div>
+            </div>
+        </div>
+        <div class="section-divider"></div>
+    </header>
+
+    <!-- About Section -->
+    <section id="about" class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-4xl font-bold mb-4">Our Mission</h2>
+                <div class="w-24 h-1 bg-yellow-500 mx-auto mb-8"></div>
+                <p class="text-xl max-w-3xl mx-auto">We believe that visionary strategy and sound policy are the cornerstones of progress. Our mission is to collaborate with our clients to create innovative solutions that not only address immediate challenges but also lay the groundwork for long-term success.</p>
+            </div>
+            
+            <div class="grid md:grid-cols-3 gap-8">
+                <div class="bg-blue-50 p-8 rounded-xl shadow-md card-hover transition-all">
+                    <div class="text-blue-600 mb-4">
+                        <i class="fas fa-bullseye text-4xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3">Strategic Vision</h3>
+                    <p class="text-gray-600">We help organizations define clear visions and set strategic goals that drive measurable success.</p>
+                </div>
+                
+                <div class="bg-blue-50 p-8 rounded-xl shadow-md card-hover transition-all">
+                    <div class="text-blue-600 mb-4">
+                        <i class="fas fa-hands-helping text-4xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3">Collaborative Approach</h3>
+                    <p class="text-gray-600">We work hand-in-hand with clients as partners, ensuring your vision becomes reality.</p>
+                </div>
+                
+                <div class="bg-blue-50 p-8 rounded-xl shadow-md card-hover transition-all">
+                    <div class="text-blue-600 mb-4">
+                        <i class="fas fa-chart-line text-4xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3">Sustainable Growth</h3>
+                    <p class="text-gray-600">Our solutions are designed to deliver immediate impact while building long-term value.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Approach Section -->
+    <section id="approach" class="py-20 bg-gray-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-4xl font-bold mb-4">Our Approach</h2>
+                <div class="w-24 h-1 bg-yellow-500 mx-auto mb-8"></div>
+                <p class="text-xl max-w-3xl mx-auto">Every client is unique, and so are our solutions. We tailor our services to address your specific needs, ensuring our strategies resonate with your goals.</p>
+            </div>
+            
+            <div class="grid md:grid-cols-3 gap-8">
+                <div class="bg-white p-8 rounded-xl shadow-lg card-hover transition-all">
+                    <div class="text-blue-600 mb-4">
+                        <i class="fas fa-user-tie text-4xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3">Client-Focused</h3>
+                    <p class="text-gray-600 mb-4">Every client is unique, and so are our solutions. We tailor our services to address your specific needs.</p>
+                    <div class="bg-blue-50 p-3 rounded-lg">
+                        <p class="text-sm text-blue-600 font-medium"><i class="fas fa-check-circle mr-2"></i> Customized strategies</p>
+                        <p class="text-sm text-blue-600 font-medium"><i class="fas fa-check-circle mr-2"></i> Personalized service</p>
+                        <p class="text-sm text-blue-600 font-medium"><i class="fas fa-check-circle mr-2"></i> Goal alignment</p>
+                    </div>
+                </div>
+                
+                <div class="bg-white p-8 rounded-xl shadow-lg card-hover transition-all">
+                    <div class="text-blue-600 mb-4">
+                        <i class="fas fa-people-arrows text-4xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3">Collaborative Partnership</h3>
+                    <p class="text-gray-600 mb-4">We see ourselves as an extension of your team, working hand-in-hand with you.</p>
+                    <div class="bg-blue-50 p-3 rounded-lg">
+                        <p class="text-sm text-blue-600 font-medium"><i class="fas fa-check-circle mr-2"></i> Team integration</p>
+                        <p class="text-sm text-blue-600 font-medium"><i class="fas fa-check-circle mr-2"></i> Shared vision</p>
+                        <p class="text-sm text-blue-600 font-medium"><i class="fas fa-check-circle mr-2"></i> Continuous communication</p>
+                    </div>
+                </div>
+                
+                <div class="bg-white p-8 rounded-xl shadow-lg card-hover transition-all">
+                    <div class="text-blue-600 mb-4">
+                        <i class="fas fa-bullseye text-4xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3">Impact-Driven</h3>
+                    <p class="text-gray-600 mb-4">Success isn't just about delivering projects; it's about achieving results that matter.</p>
+                    <div class="bg-blue-50 p-3 rounded-lg">
+                        <p class="text-sm text-blue-600 font-medium"><i class="fas fa-check-circle mr-2"></i> Measurable outcomes</p>
+                        <p class="text-sm text-blue-600 font-medium"><i class="fas fa-check-circle mr-2"></i> Performance metrics</p>
+                        <p class="text-sm text-blue-600 font-medium"><i class="fas fa-check-circle mr-2"></i> Sustainable impact</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Expertise Section -->
+    <section id="expertise" class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-4xl font-bold mb-4">Our Expertise</h2>
+                <div class="w-24 h-1 bg-yellow-500 mx-auto mb-8"></div>
+                <p class="text-xl max-w-3xl mx-auto">We bring deep industry knowledge and a wealth of experience to every project, delivering customized solutions for your specific challenges.</p>
+            </div>
+            
+            <div class="grid md:grid-cols-3 gap-8">
+                <div class="border border-gray-200 rounded-xl overflow-hidden shadow-md card-hover transition-all">
+                    <div class="h-48 bg-blue-600 flex items-center justify-center">
+                        <i class="fas fa-chess text-white text-6xl"></i>
+                    </div>
+                    <div class="p-8">
+                        <h3 class="text-xl font-bold mb-3">Strategic Planning</h3>
+                        <p class="text-gray-600 mb-4">We guide organizations in shaping their future by defining clear visions, setting strategic goals, and crafting actionable roadmaps that lead to measurable success.</p>
+                        <a href="#" class="text-blue-600 font-semibold flex items-center">
+                            Learn more <i class="fas fa-arrow-right ml-2"></i>
+                        </a>
+                    </div>
+                </div>
+                
+                <div class="border border-gray-200 rounded-xl overflow-hidden shadow-md card-hover transition-all">
+                    <div class="h-48 bg-blue-700 flex items-center justify-center">
+                        <i class="fas fa-file-alt text-white text-6xl"></i>
+                    </div>
+                    <div class="p-8">
+                        <h3 class="text-xl font-bold mb-3">Policy Analysis & Development</h3>
+                        <p class="text-gray-600 mb-4">Through rigorous analysis and evidence-based insights, we empower decision-makers with the tools they need to formulate impactful policies.</p>
+                        <a href="#" class="text-blue-600 font-semibold flex items-center">
+                            Learn more <i class="fas fa-arrow-right ml-2"></i>
+                        </a>
+                    </div>
+                </div>
+                
+                <div class="border border-gray-200 rounded-xl overflow-hidden shadow-md card-hover transition-all">
+                    <div class="h-48 bg-blue-800 flex items-center justify-center">
+                        <i class="fas fa-users text-white text-6xl"></i>
+                    </div>
+                    <div class="p-8">
+                        <h3 class="text-xl font-bold mb-3">Stakeholder Engagement</h3>
+                        <p class="text-gray-600 mb-4">We foster inclusive dialogue and build strong coalitions, ensuring that every voice is heard and every stakeholder is aligned toward common objectives.</p>
+                        <a href="#" class="text-blue-600 font-semibold flex items-center">
+                            Learn more <i class="fas fa-arrow-right ml-2"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Track Record Section -->
+    <section id="track-record" class="py-20 bg-gray-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-4xl font-bold mb-4">Our Track Record</h2>
+                <div class="w-24 h-1 bg-yellow-500 mx-auto mb-8"></div>
+                <p class="text-xl max-w-3xl mx-auto">We've partnered with organizations across sectors to deliver transformative results and sustainable growth.</p>
+            </div>
+            
+            <div class="grid md:grid-cols-3 gap-8">
+                <div class="bg-white p-8 rounded-xl shadow-lg card-hover transition-all">
+                    <div class="text-blue-600 mb-4">
+                        <i class="fas fa-landmark text-4xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3">Government</h3>
+                    <p class="text-gray-600 mb-4">We've partnered with government agencies to streamline operations, enhance public services, and promote transparency and good governance.</p>
+                    <div class="mt-6">
+                        <span class="inline-block bg-blue-100 text-blue-800 text-xs px-2 py-1 rounded-full mr-2">Policy Development</span>
+                        <span class="inline-block bg-blue-100 text-blue-800 text-xs px-2 py-1 rounded-full mr-2">Operational Efficiency</span>
+                        <span class="inline-block bg-blue-100 text-blue-800 text-xs px-2 py-1 rounded-full">Public Service</span>
+                    </div>
+                </div>
+                
+                <div class="bg-white p-8 rounded-xl shadow-lg card-hover transition-all">
+                    <div class="text-blue-600 mb-4">
+                        <i class="fas fa-hands-helping text-4xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3">Non-profit</h3>
+                    <p class="text-gray-600 mb-4">Our work with non-profit organizations has led to the development of sustainable strategies, effective fundraising, and impactful program delivery.</p>
+                    <div class="mt-6">
+                        <span class="inline-block bg-blue-100 text-blue-800 text-xs px-2 py-1 rounded-full mr-2">Sustainability</span>
+                        <span class="inline-block bg-blue-100 text-blue-800 text-xs px-2 py-1 rounded-full mr-2">Fundraising</span>
+                        <span class="inline-block bg-blue-100 text-blue-800 text-xs px-2 py-1 rounded-full">Program Impact</span>
+                    </div>
+                </div>
+                
+                <div class="bg-white p-8 rounded-xl shadow-lg card-hover transition-all">
+                    <div class="text-blue-600 mb-4">
+                        <i class="fas fa-briefcase text-4xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3">Private Sector</h3>
+                    <p class="text-gray-600 mb-4">We've assisted businesses in navigating complex regulatory landscapes, expanding into new markets, and adopting responsible and innovative business practices.</p>
+                    <div class="mt-6">
+                        <span class="inline-block bg-blue-100 text-blue-800 text-xs px-2 py-1 rounded-full mr-2">Market Expansion</span>
+                        <span class="inline-block bg-blue-100 text-blue-800 text-xs px-2 py-1 rounded-full mr-2">Regulatory Compliance</span>
+                        <span class="inline-block bg-blue-100 text-blue-800 text-xs px-2 py-1 rounded-full">Innovation</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Why Choose Us Section -->
+    <section class="py-20 bg-blue-600 text-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-4xl font-bold mb-4">Why Choose Pathways Consulting?</h2>
+                <div class="w-24 h-1 bg-yellow-500 mx-auto mb-8"></div>
+            </div>
+            
+            <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+                <div class="text-center p-6">
+                    <div class="bg-blue-700 w-20 h-20 rounded-full flex items-center justify-center mx-auto mb-4">
+                        <i class="fas fa-brain text-3xl text-yellow-400"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3">Unmatched Expertise</h3>
+                    <p class="text-blue-100">We bring deep industry knowledge and a wealth of experience to every project.</p>
+                </div>
+                
+                <div class="text-center p-6">
+                    <div class="bg-blue-700 w-20 h-20 rounded-full flex items-center justify-center mx-auto mb-4">
+                        <i class="fas fa-puzzle-piece text-3xl text-yellow-400"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3">Customized Solutions</h3>
+                    <p class="text-blue-100">Our strategies are tailored to meet the specific challenges facing your organization.</p>
+                </div>
+                
+                <div class="text-center p-6">
+                    <div class="bg-blue-700 w-20 h-20 rounded-full flex items-center justify-center mx-auto mb-4">
+                        <i class="fas fa-handshake text-3xl text-yellow-400"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3">Collaborative Mindset</h3>
+                    <p class="text-blue-100">We work closely with you to co-create solutions, ensuring your vision is realized.</p>
+                </div>
+                
+                <div class="text-center p-6">
+                    <div class="bg-blue-700 w-20 h-20 rounded-full flex items-center justify-center mx-auto mb-4">
+                        <i class="fas fa-chart-bar text-3xl text-yellow-400"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3">Proven Results</h3>
+                    <p class="text-blue-100">We are committed to delivering measurable outcomes that have a lasting impact.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="py-16 bg-yellow-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="bg-white rounded-xl shadow-xl overflow-hidden">
+                <div class="grid md:grid-cols-2">
+                    <div class="p-12 bg-gradient-to-br from-blue-600 to-blue-800 text-white">
+                        <h2 class="text-3xl font-bold mb-4">Ready to Transform Your Organization?</h2>
+                        <p class="text-blue-100 mb-6">Discover how Pathways Consulting can help turn your goals into reality. Contact us today to learn more about our services and how we can collaborate to achieve your vision.</p>
+                        <div class="flex items-center">
+                            <i class="fas fa-phone-alt mr-4 text-2xl text-yellow-400"></i>
+                            <div>
+                                <p class="text-sm text-blue-200">Call us anytime</p>
+                                <p class="text-xl font-bold">+1 (555) 123-4567</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="p-12">
+                        <h3 class="text-2xl font-bold mb-6 text-gray-800">Get in Touch</h3>
+                        <form id="contactForm" class="space-y-4">
+                            <div>
+                                <label for="name" class="block text-sm font-medium text-gray-700">Name</label>
+                                <input type="text" id="name" name="name" class="mt-1 block w-full border border-gray-300 rounded-md shadow-sm py-2 px-3 focus:outline-none focus:ring-blue-500 focus:border-blue-500">
+                            </div>
+                            <div>
+                                <label for="email" class="block text-sm font-medium text-gray-700">Email</label>
+                                <input type="email" id="email" name="email" class="mt-1 block w-full border border-gray-300 rounded-md shadow-sm py-2 px-3 focus:outline-none focus:ring-blue-500 focus:border-blue-500">
+                            </div>
+                            <div>
+                                <label for="organization" class="block text-sm font-medium text-gray-700">Organization</label>
+                                <input type="text" id="organization" name="organization" class="mt-1 block w-full border border-gray-300 rounded-md shadow-sm py-2 px-3 focus:outline-none focus:ring-blue-500 focus:border-blue-500">
+                            </div>
+                            <div>
+                                <label for="message" class="block text-sm font-medium text-gray-700">How can we help?</label>
+                                <textarea id="message" name="message" rows="3" class="mt-1 block w-full border border-gray-300 rounded-md shadow-sm py-2 px-3 focus:outline-none focus:ring-blue-500 focus:border-blue-500"></textarea>
+                            </div>
+                            <div>
+                                <button type="submit" class="w-full bg-blue-600 hover:bg-blue-700 text-white font-bold py-3 px-4 rounded-md transition-all transform hover:scale-105">
+                                    Send Message <i class="fas fa-paper-plane ml-2"></i>
+                                </button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-4xl font-bold mb-4">Contact Us</h2>
+                <div class="w-24 h-1 bg-yellow-500 mx-auto mb-8"></div>
+                <p class="text-xl max-w-3xl mx-auto">Join us in shaping the future. At Pathways Consulting, we're not just advisors—we're partners in your success.</p>
+            </div>
+            
+            <div class="grid md:grid-cols-3 gap-8">
+                <div class="bg-gray-50 p-8 rounded-xl shadow-md text-center">
+                    <div class="bg-blue-100 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
+                        <i class="fas fa-map-marker-alt text-blue-600 text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3">Our Office</h3>
+                    <p class="text-gray-600">123 Business Avenue<br>Suite 450<br>New York, NY 10001</p>
+                </div>
+                
+                <div class="bg-gray-50 p-8 rounded-xl shadow-md text-center">
+                    <div class="bg-blue-100 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
+                        <i class="fas fa-envelope text-blue-600 text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3">Email Us</h3>
+                    <p class="text-gray-600">
+                        <a href="mailto:info@pathwaysconsulting.com" class="text-blue-600 hover:underline">info@pathwaysconsulting.com</a><br>
+                        <a href="mailto:support@pathwaysconsulting.com" class="text-blue-600 hover:underline">support@pathwaysconsulting.com</a>
+                    </p>
+                </div>
+                
+                <div class="bg-gray-50 p-8 rounded-xl shadow-md text-center">
+                    <div class="bg-blue-100 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
+                        <i class="fas fa-phone-alt text-blue-600 text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3">Call Us</h3>
+                    <p class="text-gray-600">
+                        Main: +1 (555) 123-4567<br>
+                        Support: +1 (555) 765-4321
+                    </p>
+                </div>
+            </div>
+            
+            <div class="mt-16 bg-blue-50 rounded-xl p-8 shadow-inner">
+                <h3 class="text-2xl font-bold text-center mb-8">Connect With Us</h3>
+                <div class="flex justify-center space-x-6">
+                    <a href="#" class="bg-blue-600 text-white w-12 h-12 rounded-full flex items-center justify-center hover:bg-blue-700 transition-all">
+                        <i class="fab fa-twitter text-xl"></i>
+                    </a>
+                    <a href="#" class="bg-blue-600 text-white w-12 h-12 rounded-full flex items-center justify-center hover:bg-blue-700 transition-all">
+                        <i class="fab fa-linkedin-in text-xl"></i>
+                    </a>
+                    <a href="#" class="bg-blue-600 text-white w-12 h-12 rounded-full flex items-center justify-center hover:bg-blue-700 transition-all">
+                        <i class="fab fa-facebook-f text-xl"></i>
+                    </a>
+                    <a href="#" class="bg-blue-600 text-white w-12 h-12 rounded-full flex items-center justify-center hover:bg-blue-700 transition-all">
+                        <i class="fab fa-instagram text-xl"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-white py-12">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid md:grid-cols-4 gap-8">
+                <div>
+                    <a href="#" class="text-2xl font-bold text-white flex items-center">
+                        <i class="fas fa-road mr-2"></i>
+                        <span>PATHWAYS CONSULTING</span>
+                    </a>
+                    <p class="mt-4 text-gray-400">Transforming vision into tangible success through strategic consulting and collaborative partnerships.</p>
+                </div>
+                
+                <div>
+                    <h4 class="text-lg font-semibold mb-4">Quick Links</h4>
+                    <ul class="space-y-2">
+                        <li><a href="#about" class="text-gray-400 hover:text-white transition-all">About Us</a></li>
+                        <li><a href="#approach" class="text-gray-400 hover:text-white transition-all">Our Approach</a></li>
+                        <li><a href="#expertise" class="text-gray-400 hover:text-white transition-all">Expertise</a></li>
+                        <li><a href="#track-record" class="text-gray-400 hover:text-white transition-all">Track Record</a></li>
+                        <li><a href="#contact" class="text-gray-400 hover:text-white transition-all">Contact</a></li>
+                    </ul>
+                </div>
+                
+                <div>
+                    <h4 class="text-lg font-semibold mb-4">Services</h4>
+                    <ul class="space-y-2">
+                        <li><a href="#" class="text-gray-400 hover:text-white transition-all">Strategic Planning</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white transition-all">Policy Development</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white transition-all">Stakeholder Engagement</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white transition-all">Organizational Development</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white transition-all">Performance Improvement</a></li>
+                    </ul>
+                </div>
+                
+                <div>
+                    <h4 class="text-lg font-semibold mb-4">Newsletter</h4>
+                    <p class="text-gray-400 mb-4">Subscribe to our newsletter for the latest insights and updates.</p>
+                    <form class="flex">
+                        <input type="email" placeholder="Your email" class="px-4 py-2 w-full rounded-l-md focus:outline-none text-gray-900">
+                        <button type="submit" class="bg-blue-600 hover:bg-blue-700 px-4 py-2 rounded-r-md transition-all">
+                            <i class="fas fa-paper-plane"></i>
+                        </button>
+                    </form>
+                </div>
+            </div>
+            
+            <div class="border-t border-gray-800 mt-12 pt-8 flex flex-col md:flex-row justify-between items-center">
+                <p class="text-gray-400">© 2023 Pathways Consulting. All rights reserved.</p>
+                <div class="flex space-x-6 mt-4 md:mt-0">
+                    <a href="#" class="text-gray-400 hover:text-white transition-all">Privacy Policy</a>
+                    <a href="#" class="text-gray-400 hover:text-white transition-all">Terms of Service</a>
+                    <a href="#" class="text-gray-400 hover:text-white transition-all">Sitemap</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Back to Top Button -->
+    <button id="backToTop" class="fixed bottom-8 right-8 bg-blue-600 text-white w-12 h-12 rounded-full shadow-lg flex items-center justify-center opacity-0 invisible transition-all">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <!-- Scripts -->
+    <script>
+        // Mobile menu toggle
+        document.getElementById('mobile-menu-button').addEventListener('click', function() {
+            const menu = document.getElementById('mobile-menu');
+            menu.classList.toggle('hidden');
+        });
+
+        // Back to top button
+        const backToTopButton = document.getElementById('backToTop');
+        
+        window.addEventListener('scroll', function() {
+            if (window.pageYOffset > 300) {
+                backToTopButton.classList.remove('opacity-0', 'invisible');
+                backToTopButton.classList.add('opacity-100', 'visible');
+            } else {
+                backToTopButton.classList.remove('opacity-100', 'visible');
+                backToTopButton.classList.add('opacity-0', 'invisible');
+            }
+        });
+        
+        backToTopButton.addEventListener('click', function() {
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+        });
+
+        // Form submission
+        document.getElementById('contactForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+            // Here you would typically send the form data to a server
+            alert('Thank you for your message! We will get back to you soon.');
+            this.reset();
+        });
+
+        // Smooth scrolling for anchor links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                
+                const targetId = this.getAttribute('href');
+                if (targetId === '#') return;
+                
+                const targetElement = document.querySelector(targetId);
+                if (targetElement) {
+                    window.scrollTo({
+                        top: targetElement.offsetTop - 80,
+                        behavior: 'smooth'
+                    });
+                    
+                    // Close mobile menu if open
+                    const mobileMenu = document.getElementById('mobile-menu');
+                    if (!mobileMenu.classList.contains('hidden')) {
+                        mobileMenu.classList.add('hidden');
+                    }
+                }
+            });
+        });
+
+        // Animation on scroll
+        const animateOnScroll = function() {
+            const elements = document.querySelectorAll('.animate-on-scroll');
+            
+            elements.forEach(element => {
+                const elementPosition = element.getBoundingClientRect().top;
+                const windowHeight = window.innerHeight;
+                
+                if (elementPosition < windowHeight - 100) {
+                    element.classList.add('animate__animated', 'animate__fadeInUp');
+                }
+            });
+        };
+        
+        // Initialize animation on load
+        window.addEventListener('load', function() {
+            // Add animate-on-scroll class to elements you want to animate
+            const sections = document.querySelectorAll('section > div > div:not(:first-child)');
+            sections.forEach((section, index) => {
+                section.classList.add('animate-on-scroll');
+                section.style.setProperty('--animate-delay', `${index * 0.1}s`);
+            });
+            
+            animateOnScroll();
+        });
+        
+        // Animate on scroll
+        window.addEventListener('scroll', animateOnScroll);
+    </script>
+</body>
+</html>
